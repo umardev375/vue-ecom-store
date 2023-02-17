@@ -1,0 +1,102 @@
+@import '~bootstrap/scss/buttons';
+
+@keyframes spinLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.btn {
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.is-loading {
+    color: transparent !important;
+    position: relative;
+    pointer-events: none;
+
+    &:after {
+      animation: spinLoader 500ms infinite linear;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      content: '';
+      display: block;
+      height: 1em;
+      position: absolute;
+      left: calc(50% - (1em / 2));
+      top: calc(50% - (1em / 2));
+      width: 1em;
+    }
+  }
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+span.btn.disabled {
+  opacity: 1;
+}
+
+.btn-link {
+  font-weight: $btn-font-weight;
+  padding-left: 0;
+  padding-right: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+span.btn:focus,
+span.btn.focused {
+  box-shadow: none;
+}
+
+.btn-table-icon {
+  @include appBtnIcon($table-text-color);
+}
+
+.btn-primary-icon {
+  @include appBtnIcon($primary);
+}
+
+.btn-success-icon {
+  @include appBtnIcon($success);
+}
+
+.btn-danger-icon {
+  @include appBtnIcon($danger);
+}
+
+.btn-warning-icon {
+  @include appBtnIcon($warning);
+}
+
+.btn-outline-primary {
+  @include appBtnOutline($primary);
+}
+
+.btn-outline-success {
+  @include appBtnOutline($success);
+}
+
+.btn-outline-danger {
+  @include appBtnOutline($danger);
+}
+
+.btn-outline-warning {
+  @include appBtnOutline($warning);
+}
+
+.btn__svg-trash {
+  height: rem-calc(18px);
+  margin-right: rem-calc(12px);
+  width: rem-calc(18px);
+}

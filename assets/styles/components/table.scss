@@ -1,0 +1,37 @@
+//Todo: create a own component
+
+.table {
+  border-collapse: collapse;
+  color: #525252;
+  width: 100%;
+
+  thead th {
+    border-bottom: 3px solid $gray-600;
+    color: #000000;
+    font-size: rem-calc(11px);
+    font-weight: 600;
+    padding: rem-calc(0 16px 16px) !important;
+    border-top: 0 !important;
+  }
+
+  tr th {
+    border-bottom: 1px solid #dedede;
+    padding: rem-calc(15px 16px) !important;
+  }
+
+  td {
+    border-bottom: 1px solid #dedede;
+    padding: rem-calc(15px 16px) !important;
+    vertical-align: inherit !important;
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-left: 0 !important;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0 !important;
+  }
+}

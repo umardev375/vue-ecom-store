@@ -1,0 +1,27 @@
+@mixin appBtnIcon($color) {
+  color: $color;
+  flex: 0 0 auto;
+
+  &:hover,
+  &:active {
+    color: darken($color, 12.5%);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($color, 0.5);
+  }
+
+  &.is-loading {
+    background-color: $color;
+  }
+}
+
+@mixin appBtnOutline($color) {
+  &:hover:not(:disabled) {
+    color: #fff !important;
+  }
+
+  &.is-loading {
+    background-color: $color;
+  }
+}

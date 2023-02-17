@@ -1,0 +1,15 @@
+.custom-switch {
+  cursor: pointer;
+  display: flex;
+  font-size: rem-calc(12px);
+  font-weight: 600;
+  line-height: 1.2;
+  user-select: none;
+
+  .custom-control-label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    user-select: none;
+  }
+}

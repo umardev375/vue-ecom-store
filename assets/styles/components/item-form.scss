@@ -1,0 +1,22 @@
+.item-form {
+  &-wrapper {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: rem-calc(22px 28px);
+  }
+
+  &-fieldset {
+    &__title {
+      border-bottom: 3px solid #283976;
+      color: #283976;
+      font-size: rem-calc(16px);
+      font-weight: 700;
+      margin: rem-calc(58px 0 24px);
+      padding-bottom: rem-calc(20px);
+
+      .item-form-fieldset:first-child & {
+        margin-top: 0;
+      }
+    }
+  }
+}

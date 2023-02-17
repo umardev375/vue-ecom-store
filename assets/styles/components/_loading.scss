@@ -1,0 +1,29 @@
+@keyframes spinLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.loading {
+  color: transparent !important;
+  position: relative;
+  pointer-events: none;
+
+  &:after {
+    animation: spinLoader 500ms infinite linear;
+    border: 1px solid rgba(0, 0, 0, 0.5) !important;
+    border-radius: 50% !important;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    content: '' !important;
+    display: block !important;
+    height: 1em !important;
+    position: absolute !important;
+    left: calc(50% - (1em / 2)) !important;
+    top: calc(50% - (1em / 2)) !important;
+    width: 1em !important;
+  }
+}

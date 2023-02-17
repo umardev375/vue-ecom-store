@@ -1,0 +1,9 @@
+$checkout-gutter: 30px;
+.checkout-guttersx {
+  margin-right: -$checkout-gutter;
+  margin-left: -$checkout-gutter;
+  > [class*='col-'] {
+    padding-right: $checkout-gutter;
+    padding-left: $checkout-gutter;
+  }
+}

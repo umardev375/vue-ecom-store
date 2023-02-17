@@ -1,0 +1,63 @@
+@import 'vars';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/utilities/sizing';
+@import '~bootstrap/scss/tables';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/utilities/spacing';
+@import '~bootstrap/scss/utilities/flex';
+@import '~bootstrap/scss/utilities/align';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/list-group';
+@import '~bootstrap/scss/custom-forms';
+@import '~bootstrap/scss/alert';
+//@import '~bootstrap/scss/bootstrap.scss';
+//@import '~bootstrap-vue/src/index.scss';
+
+//@import "fonts";
+
+body {
+
+}
+
+
+
+
+html.drawer-open {
+  overflow: hidden;
+}
+
+
+html.menu-open {
+ @include media-breakpoint-up(md) {
+   overflow:visible;
+ }
+
+
+}
+
+@import 'components/item-form';
+@import 'components/custom-switch';
+@import 'components/custom-gutters';
+
+@import 'components/table';
+@import 'components/loading';
+
+
+.monospaced {
+  font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+  monospace;
+}
+
+.svg-icon {
+  height: rem-calc(16px);
+  width: rem-calc(16px);
+  margin-right: rem-calc(4px);
+}
+
+/**
+Temporär for Dev
+ */
+

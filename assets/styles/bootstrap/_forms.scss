@@ -1,0 +1,34 @@
+$form-validation-states: ();
+@import '~bootstrap/scss/forms';
+
+.form-label {
+  &-asterisk {
+    color: $danger;
+  }
+}
+
+.form-group.is-invalid .form-control,
+.form-group.is-invalid .custom-select {
+  border-color: $form-feedback-invalid-color;
+
+  &:focus {
+    box-shadow: 0 0 0 $input-focus-width
+      rgba($form-feedback-invalid-color, 0.25);
+  }
+}
+
+.invalid-feedback,
+.help-feedback {
+  display: block;
+  margin-top: $form-feedback-margin-top;
+  width: 100%;
+}
+
+.invalid-feedback {
+  color: $form-feedback-invalid-color;
+}
+
+.help-feedback {
+  color: $gray-600;
+  font-weight: 600;
+}

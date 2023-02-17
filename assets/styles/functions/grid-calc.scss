@@ -1,0 +1,28 @@
+// calculate padding, width, etc. according to grid columns
+// improve: extract return as function
+@function grid-calc($columns: 1, $total-columns: $grid-columns) {
+  $values: ();
+  $count: length($columns);
+
+  $container-width: $total-columns * $grid-column-width;
+
+  @if $count == 1 {
+    @return (
+        (nth($columns, 1) * strip-unit($grid-column-width) * 100) /
+          strip-unit($container-width)
+      ) * 1%;
+  }
+
+  @for $i from 1 through $count {
+    $values: append(
+      $values,
+      (
+          (nth($columns, $i) * strip-unit($grid-column-width) * 100) /
+            strip-unit($container-width)
+        ) *
+        1%
+    );
+  }
+
+  @return $values;
+}

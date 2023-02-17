@@ -1,0 +1,43 @@
+// z-indexes used in mixins-piecedata/functions/z.scss
+$z-indexes: ('toast', 'cart-backdrop', 'drawer');
+
+// Project settings goes bellow. You are allowed to update values only. Do not move/remove anything.
+$brand-color: #97c6ba;
+$label-color: #a6aab5;
+$table-text-color: #9d9dba;
+
+// header
+$header-height: 88px;
+$header-bg: #524655;
+
+// footer
+$footer-wrapper-inner-width: 1094px;
+
+$input-group-border-width: 2px;
+
+// transition
+$transition-color: color 0.15s ease-in-out;
+$transition-duration: 0.15s;
+
+//Cart Drawer
+$drawer-width: rem-calc(400px);
+$drawer-space: rem-calc(30px);
+$drawer-space-x: rem-calc(30px);
+$drawer-space-y: rem-calc(30px);
+$drawer-header-height: rem-calc(100px);
+$drawer-footer-height: rem-calc(300px);
+
+// container
+$container-space-y: rem-calc(68px);
+
+// account dropdown
+$account-dropdown-btn-my: rem-calc(17px);
+$account-dropdown-btn-p: rem-calc(9px);
+
+//BS  Container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
